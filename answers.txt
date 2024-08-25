@@ -1,0 +1,73 @@
+Using typeof bar === "object" can misidentify null as an object; avoid this by checking explicitly for null.
+
+The code outputs false and true because var a = b = 3; sets b globally and a locally.
+
+The code logs "bar" and "bar" from this and self in the outer function, but undefined from this in the inner function due to context loss.
+
+Wrapping JavaScript code in a function block helps avoid global scope pollution and creates a local scope for variables.
+
+'use strict' enforces stricter parsing and error handling in JavaScript, which can help catch common mistakes.
+
+foo1 returns an object { bar: "hello" }, while foo2 returns undefined due to automatic semicolon insertion.
+
+The output will be 0.30000000000000004 and false due to floating-point precision issues in JavaScript.
+
+The code prints 1, 4, 3, and 2 because setTimeout executes the 0 ms timeout first and then the 1000 ms timeout.
+
+A function that checks if a string is a palindrome can be written as: const isPalindrome = str => str === str.split('').reverse().join('');.
+
+The sum function should be implemented to handle both sum(a, b) and sum(a)(b) by using currying.
+
+Clicking “Button 4” logs 5 due to variable i being globally scoped; using let or closures can fix this issue.
+
+The code sets properties zebra and horse on d with undefined values, creating properties with undefined values.
+
+The output is array 1: length=8 last=c, array 2: length=9 last=jones due to array manipulation and push.
+
+The code prints 122, 32, 22, 112, NaN2, and NaN due to a mix of string concatenation and numeric operations.
+
+To avoid stack overflow in recursion, use iteration to process large lists.
+
+A closure retains access to its lexical scope after the function has finished executing, exemplified by the counter function.
+
+The code outputs 1, 1, 0, and 2 due to the behavior of logical operators in JavaScript.
+
+The code outputs false and true because == performs type coercion while === does not.
+
+The code logs 456 because both b and c are converted to the same string key, overwriting the earlier value.
+
+The code calculates and outputs 3628800, which is the factorial of 10.
+
+The code logs 1 because x from the outer function is captured by the inner function.
+
+The code outputs undefined and John Doe due to loss of context when calling stoleSecretIdentity.
+
+Use recursion or iteration to visit all descendants of a DOM element and apply a callback function.
+
+The code outputs 10 and 5 due to fn() being called in different contexts.
+
+The code logs 1, undefined, and 2 due to variable hoisting within the catch block.
+
+The code outputs undefined because the local x is hoisted and not initialized until later.
+
+The code prints 0, 1, 2, 3, and 4 due to let creating a new scope for each loop iteration.
+
+The expressions evaluate to true and false due to type coercion and comparison behavior.
+
+Use unshift to add elements at the beginning of an array and push to add elements at the end.
+
+Setting a[10] = 99 does not crash but console.log(a[6]); outputs undefined because it’s an empty slot.
+
+typeof undefined == typeof NULL is true because typeof null returns "object".
+
+The code returns "string" because typeof typeof 1 evaluates to "string".
+
+The output will be 5 five times due to variable i being scoped globally and not being updated within each timeout.
+
+NaN stands for "Not-a-Number" and is of type number, with reliable testing done using Number.isNaN(value).
+
+The code outputs 3 because variable b is hoisted and incremented before being reassigned.
+
+isInteger(x) can be implemented using Number.isInteger(x) or by checking if Math.floor(x) === x and x is a finite number.
+
+Clone an object using Object.assign, the spread operator, or JSON methods.
